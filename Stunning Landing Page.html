@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Landing Page</title>
+    <style>
+        body{
+            font-family:'Poppins', sans-serif;
+        }
+        .top-bar{
+            position: fixed;
+            background-color: white;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .stunning-logo > img{
+            width: 130px;
+            height: 60px;
+            margin-left: 10px;
+            padding-top: 5px;
+        }
+        .menu-items a{
+            color: #CECECD;
+            margin-left: 50px;
+            padding-bottom: 3px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .menu-items :hover{
+            border-bottom: 5px solid #8071D0;
+            color: black;
+        }
+        .header-button button{
+            color: #A389CC;
+            background-color: #FFD8DB;
+            border: none;
+            padding: 13px 20px;
+            border-radius: 14px;
+            cursor: pointer;
+            margin-right: 25px;
+        }
+        .header-button :hover{
+            background-color: green;
+            box-shadow: 0 0 20px #B2B1B0;
+            color: white;
+        }
+        main{
+            margin-top: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .left-side{
+            margin: 0;
+            width: 40%;
+            margin-left: 70px;
+            text-align: left;
+        }
+        .heading h1{
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            margin: 0;
+            margin-top: 30px;
+
+        }
+        .heading h1 button{
+            background-color: #5243C0;
+            border: none;
+            padding: 5px;
+            bottom: 4px;
+        }
+        .heading p{
+            color: #B2B1B0;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0;
+            margin-top: 30px;
+        }
+        .button-arrow button{
+            background-color: #5243C0;
+            color: white;
+            padding: 23px 40px;
+            border: none;
+            border-radius: 30px;
+            margin: 0;
+            cursor: pointer;
+        }
+        .button-arrow button:hover{
+            background-color: green;
+            box-shadow: 0 0 20px #B2B1B0;
+        }
+
+        .arrow{
+            top: 25px;
+            margin-left: 10px;
+            align-items: center;
+            padding-top: 20px;
+            position: relative;
+        }
+        .right-side{
+            width: 50%;
+        }
+        .right-side img{
+            width:100%
+        }
+        .checkbox-group{
+            padding-top: 30px;
+            margin-top: 60px;
+        }
+        .checkbox{
+            background-color: #f7f7f7;
+            width: 65%;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            margin-left: 0;
+            display: flex;
+            height: 45px;
+            align-items: center;
+            
+        }
+        .checkbox:hover{
+            background-color: white;
+            box-shadow: 0 0 20px #B2B1B0;
+        }
+        .checkbox-name{
+            display: inline-block;
+            text-align: center;
+            padding-left: 15px;
+        }
+        .checkbox-date{
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .checkbox-image{
+            margin-left: 5px;
+            padding-left: 10px;
+            
+        }
+        .checkbox button{
+            padding-bottom: 25px;
+            padding: 7px 13px;
+            margin-left: 30px;
+            border-radius: 20px;
+            border: none;
+        }
+        .checkbox-button1{
+            background-color: #FED7DA ;
+        }
+        .checkbox-button2{
+            background-color: #FD6534 ;
+        }
+        .checkbox-button3{
+            background-color: #9ED095 ;
+        }
+        .checkbox-button4{
+            background-color: #FFE4A0 ;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="stunning-logo">
+                <img src="\stunning-logo.png" alt="stunning-logo">
+
+            </div>
+            <div class="menu-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+            </div>
+            <div class="header-button">
+                <button>Your Account</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="left-side">
+            <div class="heading">
+                <h1>Stunning <br> Workplace<button></button></h1>
+                <p>With Stunning, remote teams can organize projects, manage shifting priorities, and get work done.</p>
+            </div>
+            <div class="button-arrow">
+                <button>New Account</button>
+                <img class="arrow" src="\arrow-down.png" alt="arrow-up">
+                <img class="arrow" src="\arrow-up.png" alt="arrow-down">
+            </div>
+            <div class="checkbox-group">
+                <div class="checkbox">
+                    <img src="\tick-gray.png" alt="deselect">
+                    <h4 class="checkbox-name">Dmm design</h4>
+                    <img class="checkbox-image" src="\user-pink.png" alt="user-pink">
+                    <p class="checkbox-date">20 Dec</p>
+                    <button class="checkbox-button1"></button>
+                </div>
+                <div class="checkbox">
+                    <img src="\tick-blue.png" alt="select">
+                    <h4 class="checkbox-name">Blurr animation</h4>
+                    <img class="checkbox-image" src="\user-orange.png" alt="user-orange">
+                    <p class="checkbox-date">22 Dec</p>
+                    <button class="checkbox-button2"></button>
+                </div>
+                <div class="checkbox">
+                    <img src="\tick-gray.png" alt="deselect">
+                    <h4 class="checkbox-name">Illustration</h4>
+                    <img class="checkbox-image" src="\user-blue.png" alt="user-blue">
+                    <p class="checkbox-date">26 Dec</p>
+                    <button class="checkbox-button3"></button>
+                </div>
+                <div class="checkbox">
+                    <img src="\tick-gray.png" alt="deselect">
+                    <h4 class="checkbox-name">Refunds</h4>
+                    <img class="checkbox-image" src="\user-red.png" alt="user-red">
+                    <p class="checkbox-date">28 Dec</p>
+                    <button class="checkbox-button4"></button>
+                </div>
+            </div>
+
+        </aside>
+        <aside class="right-side">
+            <img src="\landing-section-image.png" alt="landing-image">
+        </aside>
+    </main>
+    
+</body>
+</html>
