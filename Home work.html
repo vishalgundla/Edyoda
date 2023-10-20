@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .direction{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            background-color: darkgrey;
+            border-radius: 20px;
+            color: darkred;
+        }
+        h2{
+            width: 100%;
+            animation-name: text;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            
+        }
+        #one{
+            animation-direction: normal;
+        }
+        #two{
+            animation-direction: reverse;
+        }
+        #three{
+            animation-direction: alternate;
+        }
+        #four{
+            animation-direction: alternate-reverse;
+        }
+        @keyframes text{
+            from{
+                margin-left: 0%;
+            }
+            to{
+                margin-left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="direction">Animation Direction</div>
+    <br><br><br>
+    <h2 id="one"><span style="color: red;">Normal</span>: Plays in forward direction</h2>
+    <h2 id="two"><span style="color: red;">Reverse</span>: Plays in backward direction</h2>
+    <h2 id="three"><span style="color: red;">Alternate</span>: Plays forwards first, then backwards</h2>
+    <h2 id="four"><span style="color: red;">Alternate-Reverse</span>: Plays backwards first, then forwards</h2>
+    
+</body>
+</html>
